@@ -1,0 +1,24 @@
+h3 {
+    font-size: $heading-font;
+    font-weight: $button-weight;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    h3 {
+        font-size: 2.19rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h3 {
+        font-size: $paragraph-font;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .caption {
+        font-size: $base-font;
+    }
+}

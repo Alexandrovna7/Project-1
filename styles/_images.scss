@@ -1,0 +1,33 @@
+.images {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 100px 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .images {
+        padding: 100px 12px 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .images {
+        padding: 80px 15px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .images {
+        padding: 70px 24px 0px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .images {
+        padding: 60px 15px 0;
+    }
+}
+

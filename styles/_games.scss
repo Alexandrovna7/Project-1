@@ -1,0 +1,33 @@
+.samples {
+    padding: 100px 0;
+    &__text {
+        color: $lead-color;
+        margin: 30px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .samples {
+        padding: 80px 0;
+        &__text {
+            margin: 30px 0 48px;
+            font-size: 1.375rem;
+       }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .samples {
+        padding: 70px 24px 70px 52px;
+        &__text {
+            margin: 20px 0 58px;
+            font-size: $button-font;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .samples {
+        padding: 60px 12px 60px 40px;
+    }
+}

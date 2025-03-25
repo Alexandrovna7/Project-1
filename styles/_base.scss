@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Light'), local('SourceSerifPro-Light'), url('../fonts/Sourceserifprolight.woff2') format('woff2'), url('../fonts/Sourceserifprolight.woff') format('woff'), url('../fonts/Sourceserifprolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url('../fonts/Sourceserifpro.woff2') format('woff2'), url('../fonts/Sourceserifpro.woff') format('woff'), url('../fonts/Sourceserifpro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url('../fonts/Sourceserifprosemibold.woff2') format('woff2'), url('../fonts/Sourceserifprosemibold.woff') format('woff'), url('../fonts/Sourceserifprosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url('../fonts/Sourceserifprobold.woff2') format('woff2'), url('../fonts/Sourceserifprobold.woff') format('woff'), url('../fonts/Sourceserifprobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Source Serif Pro', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: $paragraph-color;
+    font-size: 4.06rem;
+    line-height: 81.45px;
+}
+
+h4 {
+    font-size: $paragraph-font;
+    font-weight: $secondary-weight;
+    line-height: 37.59px;
+    margin: 35px auto 15px;
+}
+
+a {
+    text-decoration: none;
+    color: $paragraph-color;
+}
+
+.block {
+    font-weight: $base-weight;
+    font-size: $paragraph-font;
+    line-height: 40.74px;
+}
+
+.lead {
+    font-weight: $base-weight;
+    font-size: $base-font;
+}
+
+@media screen and (max-width: 1024px) {
+    .lead {
+        font-size: $dish-font;
+        line-height: 22.55px;
+    }
+
+    .block {
+        font-size: 1.38rem;
+    }
+
+    h4 {
+        font-size: $base-font;
+        line-height: 31.33px;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 3.125rem;
+        line-height: 62.65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .block {
+        font-size: $button-font;
+    }
+
+    .lead {
+        font-size: $button-font;
+        line-height: 25.06px;
+    }
+
+    h2 {
+        font-size: $heading-font;
+        line-height: 50.12px;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+}

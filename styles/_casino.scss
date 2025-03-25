@@ -1,0 +1,26 @@
+.casino {
+    padding: 218px 0 185px;
+    &__text {
+    color: $paragraph-color;
+    font-weight: $secondary-weight;
+    margin: 35px 0 60px;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .casino {
+        padding: 183px 0 153px;
+        &__text {
+        margin-bottom: 63px;
+        } 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .casino {
+        padding: 171px 0 99px;
+        &__text {
+            margin-bottom: 66px;  
+        }
+    } 
+}

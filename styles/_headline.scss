@@ -1,0 +1,24 @@
+h1 {
+    color: $paragraph-color;
+    font-size: 5.31rem;
+    line-height: 103.43px;
+    text-transform: uppercase;
+    max-width: 914px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3.75rem;
+        line-height: 73.01px;
+        max-width: 697px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {  
+        font-size: 3.125rem;
+        line-height: 57.65px;    
+        max-width: 329px;
+    }
+}

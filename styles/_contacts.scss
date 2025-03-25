@@ -1,0 +1,26 @@
+.contacts {
+  background-color: rgba(38, 38, 38, 1);
+  padding: 100px 0;
+  &__text {
+    color: rgba(177, 177, 177, 1);
+    margin: 0 0 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts { 
+    padding: 80px 0 78px;
+    &__text {
+      margin: 0 0 47px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 70px 0;
+    &__text {
+      margin: 0 0 35px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.photo__avatar {
+    width: 100%;
+    max-width: 398px;
+}
+
+@media screen and (max-width: 1024px) {
+    .photo__avatar {
+        max-width: 282px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .photo__avatar {
+        max-width: 251px;
+    } 
+}

@@ -1,0 +1,92 @@
+@mixin pseudoelement-before($pseudo-bg, $content) {
+    position: absolute;
+    font-weight: $button-weight;
+    color: $paragraph-color;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    line-height: 58px;
+    text-align: center;
+    font-size: 0.88rem;
+    top: -25px;
+    left: -25px;
+    background-color: $pseudo-bg;
+    content: $content;
+}
+
+@mixin socials {
+    display: inline-block;
+    background-color: $paragraph-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@mixin pseudoelement-after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 1.5px;
+    transform: rotate(-90deg);
+    background-color: rgba(216, 213, 213, 1);
+    vertical-align: middle;
+    margin-left: 25px;
+}
+
+@mixin button($color) {
+    color: $color;
+    font-size: $button-font;
+    font-weight: $button-weight;
+    display: block;
+    max-width: 312px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: 0 auto;
+    transition: background-color .5s;
+    &:hover {
+        background-color: #FFA60D;
+        border: none;
+        color: $paragraph-color; 
+      }
+}
+
+@mixin article {
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 360px;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    &:not(:last-of-type) {
+        margin-right: 48px;
+    }
+}
+
+@mixin pseudo1250 {
+    font-size: 0.75rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: -20px;
+    left: -20px;  
+}
+
+@mixin pseudo1024 {
+    font-size: 0.75rem;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    top: -23px;
+    left: -23px;  
+}
+
+@mixin pseudo768 {
+    font-size: 0.875rem;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    top: -28px;
+    left: -28px;
+} 

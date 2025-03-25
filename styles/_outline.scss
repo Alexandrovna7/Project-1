@@ -1,0 +1,29 @@
+.outline {
+    background-color: $bg-color;
+    padding: 100px 0;
+    &__info {
+        line-height: 40.74px;
+        max-width: 941px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .outline {
+        padding: 80px 0;
+        &__info {
+        line-height: 29.88px;
+        max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .outline {
+        padding: 70px 0;
+        &__info {
+        line-height: 27.16px;
+        max-width: 541px;
+        }
+    }
+}

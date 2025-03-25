@@ -1,0 +1,16 @@
+.link--black {
+    @include button($text-color);
+}
+
+.link--white {
+    @include button($paragraph-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        font-size: 1.06rem;       
+        max-width: 248px;      
+        height: 48px;
+        line-height: 48px;
+    }
+}

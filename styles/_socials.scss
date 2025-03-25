@@ -1,0 +1,33 @@
+.socials {
+    margin-top: 60px;
+    &__item {
+    @include socials;
+    &:not(:last-child) {
+        margin-right: 40px;
+    } 
+    }
+    & i {
+        color: rgba(38, 38, 38, 1);
+        line-height: 50px;
+        font-size: 25px;
+    }
+    & a:hover {
+        transform: scale(2);
+    }
+}
+
+#instagram {
+    color: $text-color;
+}
+
+@media screen and (max-width: 1024px) {
+    .socials {
+        margin-top: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .socials {
+        margin-top: 35px;
+    }
+}
